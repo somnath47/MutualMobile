@@ -1,0 +1,13 @@
+{
+	"port": 6005,
+	"host": "localhost",
+	"db": {
+		"mysql": {
+  			"host": "localhost",
+  			"user": "som",
+  			"password" : "Test@123",
+  			"database" : "mmob"
+		}
+	},
+	"appSecret": "MySpecialSecretKeyWhichNoOneKnows"
+}
