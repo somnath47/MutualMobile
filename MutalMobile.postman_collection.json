@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "8c829679-d32a-439b-9f33-acd445a37e2b",
+		"name": "MutalMobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:6005/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"somnath@mail.com\",\n\t\"first_name\": \"Somnath\",\n\t\"last_name\": \"Ghosh\",\n\t\"password\": \"test\"\n}"
+				},
+				"url": {
+					"raw": "localhost:6005/register",
+					"host": [
+						"localhost"
+					],
+					"port": "6005",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:6005/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"somnath@mail.com\",\n\t\"password\": \"test\"\n}"
+				},
+				"url": {
+					"raw": "localhost:6005/login",
+					"host": [
+						"localhost"
+					],
+					"port": "6005",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:6005/allnotes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdF9uYW1lIjoiU29tbmF0aCIsImxhc3RfbmFtZSI6Ikdob3NoIiwiZW1haWwiOiJzb21uYXRoQG1haWwuY29tIiwiaWF0IjoxNTU0OTEyOTc3LCJleHAiOjE1NTQ5MTY1Nzd9.xfPnJfaNbn2_iBBJ3bMXRk-72Ov-rX7W2VKpDDIAKr8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:6005/allnotes",
+					"host": [
+						"localhost"
+					],
+					"port": "6005",
+					"path": [
+						"allnotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:6005/note?note_id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdF9uYW1lIjoiU29tbmF0aCIsImxhc3RfbmFtZSI6Ikdob3NoIiwiZW1haWwiOiJzb21uYXRoQG1haWwuY29tIiwiaWF0IjoxNTU0OTEyOTc3LCJleHAiOjE1NTQ5MTY1Nzd9.xfPnJfaNbn2_iBBJ3bMXRk-72Ov-rX7W2VKpDDIAKr8",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"note_heading\":\"Test4\",\n\t\"note_details\": \"Test4444\"\n}"
+				},
+				"url": {
+					"raw": "localhost:6005/note",
+					"host": [
+						"localhost"
+					],
+					"port": "6005",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:6005/note?note_id=1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdF9uYW1lIjoiU29tbmF0aCIsImxhc3RfbmFtZSI6Ikdob3NoIiwiZW1haWwiOiJzb21uYXRoQG1haWwuY29tIiwiaWF0IjoxNTU0OTEyOTc3LCJleHAiOjE1NTQ5MTY1Nzd9.xfPnJfaNbn2_iBBJ3bMXRk-72Ov-rX7W2VKpDDIAKr8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:6005/note?note_id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "6005",
+					"path": [
+						"note"
+					],
+					"query": [
+						{
+							"key": "note_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
